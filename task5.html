@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, { name: "object" }];
+        let num = [];
+        let str = [];
+        let bool = [];
+        let obj = [];
+
+        for (let i of arr) {
+          if (typeof i === "number") {
+            num.push(i); 
+          } 
+          else if (typeof i === "string") {
+            str.push(i); 
+          } 
+          else if (typeof i === "boolean") {
+            bool.push(i); 
+          } 
+          else if (typeof i === "object") {
+            obj.push(i); 
+          }
+        }
+        console.log("num =", num);
+        console.log("str =", str);
+        console.log("bool =", bool);
+        console.log("obj =", obj);
+
+    </script>
+</body>
+</html>
